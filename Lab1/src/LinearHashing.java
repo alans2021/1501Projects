@@ -64,7 +64,32 @@ public class LinearHashing<K,V>
 	//insert function
 	public boolean insert(final K key, final V value)
 	{
-
+		//Get a hash value for a key and insert keys and values at that specific hash index
+		int hashVal = hashValue(key);
+		keys.get(hashVal).add(key);
+		table.get(hashVal).add(value);
+		
+		for(int i = 0; i < keys.size(); i++){
+			List<K> keyBucket = keys.get(i);
+		
+			//If one bucket is overflowing, add a bucket and do a split
+			if (keyBucket.size() > BUCKET_LIMIT){
+				keys.add(new LinkedList<K>());
+				table.add(new LinkedList<V>());
+				numBucketsInLevel++;
+				split();
+				//If split pointer reaches 2 ^ (numLevels) * numBuckets, increment levels, reset split
+				if (splitBucketPointer == numBucketsInLevel * (int)(Math.pow(2, numLevels))){
+					numLevels++;
+					splitBucketPointer = 0;
+				}
+				//Else, just increment split Pointer
+				else
+					splitBucketPointer++;
+			}
+		}
+		return true;
+		
 	}
 
 	//retrieves the value from the hash table based on the key
@@ -143,22 +168,44 @@ public class LinearHashing<K,V>
 	//performs the linear split, where applicable
 	private void split()
 	{
-
+		List<K> KeyList = keys.get(splitBucketPointer);
+		//Do nothing if split pointer doesn't point to anything that's overflowing
+		if (KeyList.size() <= BUCKET_LIMIT) 
+			return;
+		List<V> ValueList = table.get(splitBucketPointer);
+		
+		//For each key in overflowing bucket, apply hash function
+		for(int i = ValueList.size() - 1; i >= 0; i--){
+			int newHash = hashValue(KeyList.get(i));
+			K key = KeyList.remove(i); //Remove key and value from old position
+			V value = ValueList.remove(i);
+			keys.get(newHash).add(key); //Add key and value to new index based on new hashvalue
+			table.get(newHash).add(value);
+		}
+		
+		return;
 	}
 
 	//hash value from keys
 	private int hashValue(K key)
 	{
-
+		int exp = (int)(Math.pow(2, numLevels));
+		int hash = key.hashCode() & 0x7fffffff;
+		//Different hash functions based on pointer
+		int num = hash % (numBucketsInLevel * exp);
+		if (num < splitBucketPointer)
+			num = hash % (numBucketsInLevel * exp * 2);
+		return num;
 	}
 
 	public static void main(String[] args)
 	{
-		LinearHashing<String,String> lh = new LinearHashing<>();
+		LinearHashing<String,String> lh = new LinearHashing<String, String>();
 		lh.insert("12","A");
 		lh.insert("16","B");
 		lh.insert("52","C");
 		lh.insert("56","D");
+		
 		System.out.println(lh.toString());
 		
 		System.out.println("First split");
