@@ -12,31 +12,16 @@ public class Crossword{
 			dict.add(word);
 		}
 
-		String board = args[0];
+		// Create Board object
+		String board = "test4a.txt";
 		Scanner boardScan = new Scanner(new FileInputStream(board));
-		String test = boardScan.nextLine();
-		int size = Integer.parseInt(test);
-		String[][] Crossword = new String[size][size];
+		int size = Integer.parseInt( boardScan.nextLine() );
+		Board crossword = new Board(size, boardScan, dict);
 
-		for (int i = 0; i < size; i++){
-			String line = boardScan.nextLine();
-			for (int j = 0; j < size; j++){
-				String charac = line.substring(j, j + 1);
-				if (charac.equals("+"))
-					Crossword[i][j] = "+";
-				else if (charac.equals("-"))
-					Crossword[i][j] = "-";
-				else
-					Crossword[i][j] = charac;
-			}
-
-		}
-
-		for (int i = 0; i < size; i++){
-			for (int j = 0; j < size; j++)
-				System.out.print(Crossword[i][j]);
-			System.out.println();
-		}
+		crossword.initBoard();
+		crossword.solveBoard(0, 0);
+		crossword.printSolution();
+		
 
 
 	}
