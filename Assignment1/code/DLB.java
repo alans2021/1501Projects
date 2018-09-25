@@ -2,6 +2,7 @@ import java.util.*;
 
 public class DLB implements DictInterface{
 	private ArrayList<String> list;
+	private Node first;
 
 	public DLB()
 	{
@@ -14,6 +15,9 @@ public class DLB implements DictInterface{
 	// DictInterface to make searches a bit faster.
 	public boolean add(String s)
 	{
+		for (int i = 0; i < s.length(); i++){
+			char letter = s.charAt(i); 
+		}
 		return true;
 	}
 
@@ -28,4 +32,24 @@ public class DLB implements DictInterface{
 	{
 		return 0;
 	}
+
+	private class Node
+	{
+		private char data;
+		private Node next;
+		private boolean value;
+
+		public Node(char c)
+		{
+			data = c;
+			next = null;
+		}
+
+		public Node(char c, Node n)
+		{
+			data = c;
+			next = n;
+		}
+	}
 }
+
