@@ -13,7 +13,7 @@ public class Crossword{
 		}
 
 		// Create Board object
-		String board = "test4a.txt";
+		String board = "test6a.txt";
 		Scanner boardScan = new Scanner(new FileInputStream(board));
 		int size = Integer.parseInt( boardScan.nextLine() );
 		Board crossword = new Board(size, boardScan, dict);
