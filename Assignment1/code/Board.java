@@ -68,11 +68,11 @@ public class Board{
 				solution[row][col] = letter;
 				
 				if (col >= size - 1){ // Move to next row if all columns of one row filled
-					printSolution();
+					printSolution(false);
 					solveBoard(row + 1, 0);
 				}
 				else{
-					printSolution();
+					printSolution(false);
 					solveBoard(row, col + 1);
 				}
 
@@ -117,10 +117,18 @@ public class Board{
 		StringBuilder colString = new StringBuilder(colStr[col]);
 		rowString.append(letter);
 		colString.append(letter);
-		if (rowString.indexOf("-") != -1) //Remove substring before '-', those don't matter
-			rowString = rowString.delete(0, rowString.indexOf("-") + 1);
+		
+		if (rowString.indexOf("-") != -1) //Remove substring before last '-', those don't matter
+			rowString = rowString.delete(0, rowString.lastIndexOf("-") + 1);
 		if (colString.indexOf("-") != -1) //Remove substring before '-', those don't matter
-			colString = colString.delete(0, colString.indexOf("-") + 1);
+			colString = colString.delete(0, colString.lastIndexOf("-") + 1);
+		
+		int colIndex = colFill.indexOf(col + 1); //Check to see if the column right after is part of the colFilled
+		if(colIndex != -1 && rowFill.get(colIndex) == row) //If so, see if the row at the same index same as parameter
+			mustWordR = true; //Has to be a word, so something like 'ac-' means that ac has to be a word, not prefix
+		int rowIndex = rowFill.indexOf(row + 1); //Check to see if row right after is part of rowFilled
+		if(rowIndex != -1 && colFill.get(rowIndex) == col) //If so, see if column at same index is same as parameter
+			mustWordC = true;
 		
 		int rowCondition = dict.searchPrefix(rowString);
 		int colCondition = dict.searchPrefix(colString);
@@ -147,8 +155,11 @@ public class Board{
 		}
 	}
 	
-	public void printSolution(){
-		System.out.println("Solution Found: ");
+	public void printSolution(boolean b){
+		if(b)
+			System.out.println("Solution Found: ");
+		else
+			System.out.println("No solution");
 		for (int i = 0; i < size; i++){
 			for (int j = 0; j < size; j++)
 				System.out.print(solution[i][j] + "\t");
