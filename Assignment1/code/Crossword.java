@@ -5,31 +5,32 @@ import java.lang.*;
 public class Crossword{
 	
 	public static void main(String[]args) throws IOException{
-		DictInterface dict = new MyDictionary();
-		DictInterface DLB = new DLB();
+		String dictType = args[0];
+		DictInterface dict;
+		if(dictType.equals("DLB"))
+			dict = new MyDictionary();
+		else
+			dict = new DLB();
 		Scanner dictScan = new Scanner(new FileInputStream("dict8.txt"));
 		while (dictScan.hasNext()){
 			String word = dictScan.nextLine();
 			dict.add(word);
-			DLB.add(word);
 		}
 
 		// Create Board object
-		String board = "test8c.txt";
+		String board = args[1];
 		Scanner boardScan = new Scanner(new FileInputStream(board));
 		int size = Integer.parseInt( boardScan.nextLine() );
 		
-//		Board crossword = new Board(size, boardScan, dict);
-//		System.out.println("Solving board " + board + " using MyDictionary implementation");
-//		crossword.initBoard();
-//		crossword.solveBoard(0, 0);
-//		crossword.printSolution(true);
-		
-		Board crosswordAll = new Board(size, boardScan, DLB);
-		System.out.println("Solving board " + board + " using DLB implementation");
-		crosswordAll.initBoard();
-		crosswordAll.solveBoard(0, 0);
-		crosswordAll.printSolution(true);
+		Board crossword = new Board(size, boardScan, dict, dictType);
+		if (dictType.equals("DLB"))
+			System.out.println("Solving board " + board + " using DLB implementation");
+		else
+			System.out.println("Solving board " + board + " using MyDictionary implementation");
+		crossword.initBoard();
+		crossword.solveBoard(0, 0);
+		if (dictType.equals("DLB"))
+			System.out.println(crossword.getSol() + " Solutions found");
 
 	}
 }
