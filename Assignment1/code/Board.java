@@ -7,17 +7,20 @@ public class Board{
 	private String[] letters = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"};
 	private Scanner inputs;
 	private DictInterface dict;
+	private String dictType;
 	private String[][] solution;
 	private StringBuilder[] colStr;
 	private StringBuilder[] rowStr;
 	private ArrayList<Integer> rowFill = new ArrayList<Integer>();
 	private ArrayList<Integer> colFill = new ArrayList<Integer>();;
 	private boolean solved;
+	private int numSolutions = 0;
 
-	public Board(int n, Scanner sc, DictInterface d){
+	public Board(int n, Scanner sc, DictInterface d, String s){
 		size = n;
 		inputs = sc;
 		dict = d;
+		dictType = new String(s);
 		solved = false;
 		solution = new String[size][size];
 		colStr = new StringBuilder[size];
@@ -67,15 +70,11 @@ public class Board{
 				colStr[col].append(letter);
 				solution[row][col] = letter;
 				
-				if (col >= size - 1){ // Move to next row if all columns of one row filled
-					printSolution(false);
+				if (col >= size - 1) // Move to next row if all columns of one row filled
 					solveBoard(row + 1, 0);
-				}
-				else{
-					printSolution(false);
+				else
 					solveBoard(row, col + 1);
-				}
-
+				
 				if(!solved){ //Only do this if puzzle has not been solved yet
 					rowStr[row].deleteCharAt(rowStr[row].length() - 1); //Delete letter
 					colStr[col].deleteCharAt(colStr[col].length() - 1); //Delete letter
@@ -84,16 +83,28 @@ public class Board{
 					else
 						break; //Break out of for loop if fixed square
 				}
-				else
+				else if(dictType.equals("DLB")){
+					if(numSolutions % 10000 == 0)
+						printSolution();
+					numSolutions++;
+					rowStr[row].deleteCharAt(rowStr[row].length() - 1); //Delete letter
+					colStr[col].deleteCharAt(colStr[col].length() - 1); //Delete letter
+					System.out.println(numSolutions + " solutions currently found");
+					if(!isFixed) //If square not fixed, revert it back to '+' form
+						solution[row][col] = "+";
+					else
+						break; //Break out of for loop if fixed square
+				}
+				else{
+					numSolutions++;
 					return;
+				}
 			}
 			else{
 				if(isFixed) //Break out of for loop if it's a fixed letter since it can't change anyway
 					break;
 			}
 		}
-		if (row == 0 && col == 0)
-			System.out.println("No Solution found");
 	
 	}
 	
@@ -155,15 +166,16 @@ public class Board{
 		}
 	}
 	
-	public void printSolution(boolean b){
-		if(b)
-			System.out.println("Solution Found: ");
-		else
-			System.out.println("No solution");
+	public void printSolution(){
+		System.out.println("Solution Found: ");
 		for (int i = 0; i < size; i++){
 			for (int j = 0; j < size; j++)
 				System.out.print(solution[i][j] + "\t");
 			System.out.println();
 		}
+	}
+	
+	public int getSol(){
+		return numSolutions;
 	}
 }
