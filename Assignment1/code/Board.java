@@ -83,19 +83,19 @@ public class Board{
 					else
 						break; //Break out of for loop if fixed square
 				}
-				else if(dictType.equals("DLB")){
+				else if(dictType.equals("DLB")){ //If Dictionary is DLB
 					if(numSolutions % 10000 == 0)
 						printSolution();
 					numSolutions++;
+					solved = false;
 					rowStr[row].deleteCharAt(rowStr[row].length() - 1); //Delete letter
 					colStr[col].deleteCharAt(colStr[col].length() - 1); //Delete letter
-					System.out.println(numSolutions + " solutions currently found");
 					if(!isFixed) //If square not fixed, revert it back to '+' form
 						solution[row][col] = "+";
 					else
 						break; //Break out of for loop if fixed square
 				}
-				else{
+				else{ //If MyDictionary, return if solved
 					numSolutions++;
 					return;
 				}
