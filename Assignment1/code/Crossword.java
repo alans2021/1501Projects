@@ -31,6 +31,8 @@ public class Crossword{
 		crossword.solveBoard(0, 0);
 		if (dictType.equals("DLB"))
 			System.out.println(crossword.getSol() + " Solutions found");
+		else
+			crossword.printSolution();
 
 	}
 }
