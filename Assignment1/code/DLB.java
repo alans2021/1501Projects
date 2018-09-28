@@ -58,15 +58,11 @@ public class DLB implements DictInterface{
 	{
 		private char data;
 		public LinkedList<Node> children;
-		public Node left;
-		public Node right;
 		private boolean value; //Indicates as a word
 
 		public Node(){
 			value = false;
 			children = new LinkedList<Node>();
-			left = null;
-			right = null;
 		}
 		
 		public Node(char c)
@@ -74,8 +70,6 @@ public class DLB implements DictInterface{
 			data = c;
 			value = false;
 			children = new LinkedList<Node>();
-			left = null;
-			right = null;
 		}
 		
 		public char getChar(){
@@ -86,31 +80,17 @@ public class DLB implements DictInterface{
 		{
 			if (children.size() > 1)
 			{
-				Node curr = children.get(0);
-				int i = 0;
-				while(curr != null && n.getChar() > curr.getChar()){
-					curr = curr.right;
-					i++;
+				int i;
+				for(i = 0; i < children.size(); i++){
+					Node curr = children.get(i);
+					if(n.getChar() < curr.getChar())
+						break;
 				}
 				children.add(i, n);
-				addSibling(n, curr);
+				//addSibling(n, curr);
 			}
 			else
 				children.add(n);
-		}
-		
-		private void addSibling(Node n, Node r){
-			Node left;
-			if (r != null){
-				left = r.left;
-				r.left = n;
-			}
-			else
-				left = children.get(children.size() - 2);
-			n.right = r;
-			n.left = left;
-			if (left != null)
-				left.right = n;	
 		}
 		
 		public Node search(char c)
