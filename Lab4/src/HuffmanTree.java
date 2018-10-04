@@ -1,4 +1,5 @@
 import java.util.Hashtable;
+import java.util.Set;
 
 public class HuffmanTree<E>
 {
@@ -17,19 +18,25 @@ public class HuffmanTree<E>
 	//Encode several items at once
 	public Integer[] encode(final E[] items)
 	{
-		
+		final Integer[] encodes = new Integer[items.length];
+		for(int i = 0; i < items.length; i++)
+			encodes[i] = getEncoding(items[i]);
+		return encodes;
 	}
 
 	//Encode a single item only
 	public Integer getEncoding(final E item)
 	{
-		return Integer.parseInt(this.encoding.get(item), 2);
+		return Integer.parseInt(this.encoding.get(item));
 	}
 
 	//Decode several items
 	public E[] decode(Integer[] encoding)
 	{
-		
+		final E[] decodes = (E[]) new Object[encoding.length];
+		for(int i = 0; i < decodes.length; i++)
+			decodes[i] = getDecoding(encoding[i]);
+		return decodes;
 	}
 
 	//Decode a single item only
@@ -37,16 +44,16 @@ public class HuffmanTree<E>
 	{
 		HuffmanNode<E> treeLoc = this.root;
 		int codeLevel = 0;
-		while(codeLevel < Integer.SIZE)
+		while(codeLevel < Integer.SIZE) //While not at leaf node
 		{
-			final int masked = code & 1;
-			HuffmanNode<E> newTreeLoc = treeLoc.getChild(masked == 0);
+			final int masked = code & 1; //figure out what bit
+			HuffmanNode<E> newTreeLoc = treeLoc.getChild(masked == 0); //move pointer to correct direction
 			if(newTreeLoc == null)
 			{
-				return treeLoc.item;
+				return treeLoc.item; //When at leaf node, return the object at that node
 			}
 			treeLoc = newTreeLoc;
-			code = code >>> 1;
+			code = code >>> 1; //Remove bit from int
 			codeLevel++;
 		}
 		return null;
@@ -55,7 +62,26 @@ public class HuffmanTree<E>
 	//Generates the Huffman Tree
 	private final void developTree()
 	{
-		//checkTree(this.root);
+		int min = count.get('a');
+		int min2 = count.get('a');
+		Set<E> keys = count.keySet();
+		HuffmanNode<E> left = null;
+		HuffmanNode<E> right = null;
+		HuffmanNode<E> combine = new HuffmanNode<E>();
+		for(E key: keys){
+			if(count.get(key) < min)
+				min = count.get(key);
+			left = new HuffmanNode<E>(key, min);	
+		}
+		for(E key: keys){
+			if(count.get(key) < min2 && !left.item.equals(key))
+				min2 = count.get(key);
+			right = new HuffmanNode<E>(key, min2);
+		}
+		combine.setChildren(left, right);
+		
+		root = new HuffmanNode<E>();
+		checkTree(this.root);
 	}
 
 	//helper method to ensure your tree is valid
