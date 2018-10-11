@@ -1,5 +1,6 @@
 import java.util.Hashtable;
 import java.util.Set;
+import java.util.PriorityQueue;
 
 public class HuffmanTree<E>
 {
@@ -62,26 +63,27 @@ public class HuffmanTree<E>
 	//Generates the Huffman Tree
 	private final void developTree()
 	{
-		int min = count.get('a');
-		int min2 = count.get('a');
-		Set<E> keys = count.keySet();
-		HuffmanNode<E> left = null;
-		HuffmanNode<E> right = null;
-		HuffmanNode<E> combine = new HuffmanNode<E>();
-		for(E key: keys){
-			if(count.get(key) < min)
-				min = count.get(key);
-			left = new HuffmanNode<E>(key, min);	
-		}
-		for(E key: keys){
-			if(count.get(key) < min2 && !left.item.equals(key))
-				min2 = count.get(key);
-			right = new HuffmanNode<E>(key, min2);
-		}
-		combine.setChildren(left, right);
+		PriorityQueue<HuffmanNode> nodes = new PriorityQueue<>(); //Create priority queue of Huffman nodes
+		Set<E> setKey = count.keySet(); //Get set of all keys
+		E[] keys = (E[]) setKey.toArray(); //Convert to array
+		for(int i = 0; i < keys.length; i++){
+			HuffmanNode<E> node = new HuffmanNode<E>(keys[i], count.get(keys[i]));
+			nodes.add(node); //Add huffman node to queue 
 		
-		root = new HuffmanNode<E>();
+		}
+		
+		while(nodes.size() > 1){
+			HuffmanNode<E> left = nodes.poll(); //Pull two lowest Huffman nodes
+			HuffmanNode<E> right = nodes.poll();
+			HuffmanNode<E> subtree = new HuffmanNode<E>(); 
+			subtree.setChildren(left, right); //Make subtree with left and right as children
+			nodes.add(subtree); //Add to queue
+		}
+		
+		root = nodes.poll();
 		checkTree(this.root);
+		System.out.println("Test");
+		System.out.println();
 	}
 
 	//helper method to ensure your tree is valid
