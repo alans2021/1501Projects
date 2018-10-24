@@ -70,20 +70,20 @@ public class PHPArray<V> implements Iterable<V>{
 	}
 	
 	public V get(Object k){
-		int j = hash(k.toString());
+		int j = hash(k.toString()); //Get hash value
         for (int i = hash(k.toString()); values[i] != null; i = (i + 1) % values.length){ 
             Node temp = (Node) values[i];
-        	if (temp.key.equals(k.toString()))
+        	if (temp.key.equals(k.toString())) //Return the value if key is found
                 return temp.value;
         }
         return null;
 	}
 	
 	public void unset(Object key){
-		if(get(key) == null)
+		if(get(key) == null) //See if key exists
 			return;
-		int hashValue = hash(key.toString());
-		Node temp = (Node) values[hashValue];
+		int hashValue = hash(key.toString()); 
+		Node temp = (Node) values[hashValue]; //Find node with key
 		while (!key.toString().equals( temp.key)) {
             hashValue = (hashValue + 1) % values.length;
             temp = (Node) values[hashValue];
@@ -91,7 +91,7 @@ public class PHPArray<V> implements Iterable<V>{
 		if(temp == first)
 			first = first.next;
 		else{
-			Node delete = temp;
+			Node delete = temp; //Update next and prev relationships
 			Node previous = delete.prev;
 			previous.next = delete.next;
 		}
@@ -103,7 +103,7 @@ public class PHPArray<V> implements Iterable<V>{
 			values[hashValue] = null;
 			System.out.println("\t\tKey " + temp.key + " rehashed ");
 			System.out.println();
-			reput(temp);
+			reput(temp); //Put in new hash location
 			hashValue = (hashValue + 1) % values.length;
 		}
 		size--;
@@ -114,7 +114,7 @@ public class PHPArray<V> implements Iterable<V>{
 		while(values[rehash] != null){
 			rehash = (rehash + 1) % values.length;
 		}
-		values[rehash] = temp;
+		values[rehash] = temp; //Node placed in updated location
 	}
 	
 	public ArrayList<String> keys(){
@@ -161,15 +161,15 @@ public class PHPArray<V> implements Iterable<V>{
 				curr = curr.next;
 				i++;
 			}
-			vals = mergeSort(vals, 0, vals.length);
-			for(i = 0; i < values.length; i++)
+			vals = mergeSort(vals, 0, vals.length); //Mergesort vals
+			for(i = 0; i < values.length; i++) //Set array to null
 				values[i] = null;
-			first = null;
+			first = null; 
 			current = null;
 			last = null;
 			size = 0;
 			
-			for(int j = 0; j < vals.length; j++)
+			for(int j = 0; j < vals.length; j++) //Put sorted nodes in table with updated keys
 				put(Integer.toString(j), vals[j]);
 			
 		}
@@ -185,7 +185,7 @@ public class PHPArray<V> implements Iterable<V>{
 		}
 		Comparable[] left = mergeSort(c, start, (start + end) / 2);
 		Comparable[] right = mergeSort(c, (start + end) / 2, end);
-		Comparable[] inter = new Comparable[end - start];
+		Comparable[] inter = new Comparable[end - start]; //Following is the merge
 		int leftCurr = 0;
 		int leftEnd = left.length;
 		int rightCurr = 0;
@@ -220,7 +220,7 @@ public class PHPArray<V> implements Iterable<V>{
 	
 	public void asort(){
 		try{
-			Object[] nodes = new Object[size];
+			Object[] nodes = new Object[size]; //Store nodes
 			Node curr = first;
 			int i = 0;
 			while(curr != null){
@@ -228,7 +228,7 @@ public class PHPArray<V> implements Iterable<V>{
 				curr = curr.next;
 				i++;
 			}
-			nodes = nodeSort(nodes, 0, nodes.length);
+			nodes = nodeSort(nodes, 0, nodes.length); //Sort nodes based off of values field
 			
 			for(i = 0; i < values.length; i++)
 				values[i] = null;
@@ -239,7 +239,7 @@ public class PHPArray<V> implements Iterable<V>{
 			
 			for(int j = 0; j < nodes.length; j++){
 				curr = (Node) nodes[j];
-				put(curr.key, curr.value);
+				put(curr.key, curr.value); //Place in hash table
 			}
 			
 		}
@@ -295,7 +295,7 @@ public class PHPArray<V> implements Iterable<V>{
 		while(curr != null){
 			String newKey = (String) curr.value;
 			String newVal = curr.key;
-			flip.put(newKey, newVal);
+			flip.put(newKey, newVal); //Put new key value pairs in flip PHPArray
 			curr = curr.next;
 		}
 		
@@ -314,10 +314,10 @@ public class PHPArray<V> implements Iterable<V>{
 	
 
 	public Pair<V> each() {
-		if(pairPointer == null)
+		if(pairPointer == null) //Set pairPointer to first if haven't started iterating through
 			pairPointer = first;
 		else
-			pairPointer = pairPointer.next;
+			pairPointer = pairPointer.next; //Set to next
 		if(pairPointer == null)
 			return null;
 		
@@ -326,7 +326,7 @@ public class PHPArray<V> implements Iterable<V>{
 	}
 
 	public void reset(){
-		pairPointer = null;
+		pairPointer = null; //Set to null
 	}
 
 	public Iterator<V> iterator() {
@@ -351,7 +351,7 @@ public class PHPArray<V> implements Iterable<V>{
 		}
 
 		public int compareTo(Node n) throws ClassCastException{
-			Comparable first = (Comparable) this.value;
+			Comparable first = (Comparable) this.value; //If values are comparable, compare values
 			Comparable second = (Comparable) n.value;
 			return first.compareTo(second);
 		}
@@ -368,7 +368,7 @@ public class PHPArray<V> implements Iterable<V>{
         public boolean hasNext()  { return current != null;                     }
         public void remove()      { throw new UnsupportedOperationException();  }
 
-        public V next() {
+        public V next() { //Go to Node's next reference
             if (!hasNext()) throw new NoSuchElementException();
             V item = (V) current.value;
             current = current.next; 
