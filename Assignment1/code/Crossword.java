@@ -8,9 +8,9 @@ public class Crossword{
 		String dictType = args[0];
 		DictInterface dict;
 		if(dictType.equals("DLB"))
-			dict = new MyDictionary();
-		else
 			dict = new DLB();
+		else
+			dict = new MyDictionary();
 		Scanner dictScan = new Scanner(new FileInputStream("dict8.txt"));
 		while (dictScan.hasNext()){
 			String word = dictScan.nextLine();

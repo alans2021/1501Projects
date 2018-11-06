@@ -1,13 +1,658 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4877b539-63fe-46b1-bd36-3dd37dad9d42" name="Default Changelist" comment="Initial Assignment 3">
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/DLB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/LZWmod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab7/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab7/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab7/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab7/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab7/Lab7.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.log" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.mylyn/tasks.xml.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.mylyn/tasks.xml.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/1.tree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.launching.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.launching.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.editors.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.editors.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.launching/.install.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.launching/.install.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.launching/libraryInfos.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.launching/libraryInfos.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.team.cvs.core/.running" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/Assignment Information Sheet(1).docx" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment1/Assignment Information Sheet(1).docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment1/code/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/Crossword.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment1/code/Crossword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/DLB.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment1/code/DLB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/DLB.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment1/code/DLB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/DictInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment1/code/DictInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/DictTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment1/code/DictTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/MyDictionary.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment1/code/MyDictionary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/dict8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/test3a-out.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/test3a.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/test3b.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/test4a.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/test4b.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/test4c.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/test4d.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/test4e.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/test4f.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/test5a.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/test6a.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/test6b.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/test6c.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/test7a.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/test8a.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/test8b-out.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/test8b.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/test8c.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/testFiles.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment2/code/Assig2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment2/src/Assig2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment2/code/LinearProbingHashST.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment2/src/LinearProbingHashST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment2/code/PHPArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment2/src/PHPArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment2/code/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment2/src/Queue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment2/code/StdIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment2/src/StdIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment2/code/StdOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment2/src/StdOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment2/code/a2out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment2/src/a2out.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Assignment3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Assignment3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/BinaryStdIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/code/BinaryStdIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/TestFiles/Lego-big.gif" beforeDir="false" afterPath="$PROJECT_DIR$/TestFiles/Lego-big.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/TestFiles/all.tar" beforeDir="false" afterPath="$PROJECT_DIR$/TestFiles/all.tar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/TestFiles/assig2.doc" beforeDir="false" afterPath="$PROJECT_DIR$/TestFiles/assig2.doc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/TestFiles/bmps.tar" beforeDir="false" afterPath="$PROJECT_DIR$/TestFiles/bmps.tar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/TestFiles/code.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TestFiles/code.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/TestFiles/code2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TestFiles/code2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/TestFiles/edit.exe" beforeDir="false" afterPath="$PROJECT_DIR$/TestFiles/edit.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/TestFiles/frosty.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/TestFiles/frosty.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/TestFiles/gone_fishing.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/TestFiles/gone_fishing.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/TestFiles/large.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TestFiles/large.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/TestFiles/medium.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TestFiles/medium.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/TestFiles/texts.tar" beforeDir="false" afterPath="$PROJECT_DIR$/TestFiles/texts.tar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/TestFiles/wacky.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/TestFiles/wacky.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/TestFiles/winnt256.bmp" beforeDir="false" afterPath="$PROJECT_DIR$/TestFiles/winnt256.bmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3/src/BoyerMoore.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3/src/BoyerMoore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4/src/HuffmanCompression.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab4/src/HuffmanCompression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4/src/HuffmanTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab4/src/HuffmanTree.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ErrorTreeViewConfiguration">
+    <option name="hideWarnings" value="true" />
+    <option name="HIDE_WARNINGS" value="true" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="2119512450">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.11" value="3" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.opened" value="6" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="exe" value="2" />
+          <entry key="iml" value="1" />
+          <entry key="java" value="14" />
+          <entry key="test" value="2" />
+          <entry key="txt" value="11" />
+          <entry key="xml" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="JAVA" value="13" />
+          <entry key="PLAIN_TEXT" value="15" />
+          <entry key="Scratch" value="1" />
+          <entry key="XML" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="2106" />
+          <entry key="test" value="63" />
+          <entry key="txt" value="52" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="2084" />
+          <entry key="PLAIN_TEXT" value="115" />
+          <entry key="Scratch" value="22" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/BinaryStdIn.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="55" column="25" lean-forward="true" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/TST.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1819">
+              <caret line="145" column="3" selection-start-line="145" selection-start-column="3" selection-end-line="145" selection-end-column="3" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/LZW.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/DLB.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="67" selection-start-line="67" selection-end-line="67" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/code/LZWmod.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="48" column="9" lean-forward="true" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/BinaryStdOut.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="282">
+              <caret line="263" selection-start-line="263" selection-end-line="263" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>TST</find>
+      <find>isEmpty</find>
+      <find>write</find>
+      <find>longestP</find>
+      <find>readStr</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/code/test" />
+        <option value="$PROJECT_DIR$/code/Input.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
+        <option value="$PROJECT_DIR$/code/DLB.java" />
+        <option value="$PROJECT_DIR$/TestFiles/test.txt" />
+        <option value="$PROJECT_DIR$/code/BinaryStdIn.java" />
+        <option value="$PROJECT_DIR$/code/LZWmod.java" />
+        <option value="$PROJECT_DIR$/code/test.txt" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-12" />
     <option name="y" value="-12" />
     <option name="width" value="1944" />
     <option name="height" value="1044" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Assignment3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Assignment3" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Assignment3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Assignment3" type="462c0819:PsiDirectoryNode" />
+              <item name="TestFiles" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540349799207" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541541464943" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lab4" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\alans\Documents\College\Sophomore year\Fall\CS 1501\Assignments\Assignment3\code" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\alans\Documents\College\Sophomore year\Fall\CS 1501\Assignments\Assignment3\TestFiles" />
+      <recent name="C:\Users\alans\Documents\College\Sophomore year\Fall\CS 1501\Assignments\Assignment3" />
+      <recent name="C:\Users\alans\Documents\College\Sophomore year\Fall\CS 1501\Assignments\Assignment3\code" />
+      <recent name="C:\Users\alans\Documents\College\Sophomore year\Fall\CS 1501\Assignments\Assignment3\code\TestFiles" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.LZWmod">
+    <configuration name="LZWmod" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="LZWmod" />
+      <module name="Assignment3" />
+      <option name="PROGRAM_PARAMETERS" value="-" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TST" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TST" />
+      <module name="Assignment3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LZW" type="Java Scratch" factoryName="Java Scratch">
+      <option name="MAIN_CLASS_NAME" value="LZW.class" />
+      <module name="Assignment3" />
+      <option name="PROGRAM_PARAMETERS" value="- &lt; test" />
+      <option name="SCRATCH_FILE_URL" value="file://$PROJECT_DIR$/code/LZW.java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scratch" type="Java Scratch" factoryName="Java Scratch" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Scratch" />
+      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.TST" />
+      <item itemvalue="Application.LZWmod" />
+      <item itemvalue="Java Scratch.LZW" />
+      <item itemvalue="Java Scratch.Scratch" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Java Scratch.Scratch" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4877b539-63fe-46b1-bd36-3dd37dad9d42" name="Default Changelist" comment="" />
+      <created>1540349723794</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1540349723794</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Initial Assignment 3">
+      <created>1540349861914</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1540349861914</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15708502" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3291815" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28113878" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.40569395" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3291815" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2758007" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.3291815" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.29003558" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" weight="0.32955465" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Assignment 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Assignment 3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/code/DLB.java</url>
+          <line>67</line>
+          <properties />
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="this" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/TestFiles/code.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1621" column="23" lean-forward="true" selection-start-line="1621" selection-start-column="23" selection-end-line="1621" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/StdOut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="121" column="6" lean-forward="true" selection-start-line="121" selection-start-column="6" selection-end-line="121" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/Input.java" />
+    <entry file="file://$PROJECT_DIR$/code/compress.exe">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/test" />
+    <entry file="file://$PROJECT_DIR$/code/StdIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="648" column="23" lean-forward="true" selection-start-line="648" selection-start-column="23" selection-end-line="648" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/Assignment3.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/output.txt" />
+    <entry file="file://$PROJECT_DIR$/code/medium_comp.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="43" selection-start-line="3" selection-start-column="43" selection-end-line="3" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/TST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1819">
+          <caret line="145" column="3" selection-start-line="145" selection-start-column="3" selection-end-line="145" selection-end-column="3" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/LZW.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestFiles/medium.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestFiles/test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/BinaryStdIn.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="55" column="25" lean-forward="true" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/BinaryStdOut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="263" selection-start-line="263" selection-end-line="263" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/DLB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/testcompress.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/test.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/LZWmod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="48" column="9" lean-forward="true" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Assignment3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

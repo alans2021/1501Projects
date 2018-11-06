@@ -8,12 +8,10 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Hashtable;
 import java.util.LinkedList;
-
 import java.util.regex.Pattern;
 
 //This program takes a text file and outputs two files, the text file encoded, then the text file decoded from the encoding

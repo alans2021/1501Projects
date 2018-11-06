@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ad7c6629-c58e-4fe9-8fba-7374efa83586" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab7.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.log" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.mylyn/tasks.xml.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.mylyn/tasks.xml.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.root/1.tree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.launching.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.launching.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.jdt.ui.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.editors.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.editors.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/externalLibsTimeStamps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.core/variablesAndContainers.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.launching/.install.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.launching/.install.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.launching/libraryInfos.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.launching/libraryInfos.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/QualifiedTypeNameHistory.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.jdt.ui/dialog_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.m2e.logback.configuration/0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.team.cvs.core/.running" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/Assignment Information Sheet(1).docx" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment1/Assignment Information Sheet(1).docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment1/code/Board.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/Crossword.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment1/code/Crossword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/DLB.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment1/code/DLB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/DLB.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment1/code/DLB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/DictInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment1/code/DictInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/DictTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment1/code/DictTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/MyDictionary.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment1/code/MyDictionary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/dict8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/test3a-out.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/test3a.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/test3b.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/test4a.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/test4b.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/test4c.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/test4d.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/test4e.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/test4f.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/test5a.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/test6a.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/test6b.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/test6c.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/test7a.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/test8a.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/test8b-out.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/test8b.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/test8c.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment1/code/testFiles.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment2/code/Assig2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment2/src/Assig2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment2/code/LinearProbingHashST.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment2/src/LinearProbingHashST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment2/code/PHPArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment2/src/PHPArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment2/code/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment2/src/Queue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment2/code/StdIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment2/src/StdIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment2/code/StdOut.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment2/src/StdOut.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment2/code/a2out.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment2/src/a2out.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3/.idea/Assignment3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment3/.idea/Assignment3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment3/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Assignment3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Assignment3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3/src/BoyerMoore.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3/src/BoyerMoore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4/src/HuffmanCompression.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab4/src/HuffmanCompression.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab4/src/HuffmanTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab4/src/HuffmanTree.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="91434743">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="85" />
+          <entry key="txt" value="10" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="85" />
+          <entry key="PLAIN_TEXT" value="10" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/KaratsubaMultiplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="38" column="20" lean-forward="true" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/KaratsubaMultiplication.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-12" />
+    <option name="y" value="-12" />
+    <option name="width" value="1944" />
+    <option name="height" value="1044" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Lab7" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab7" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lab7" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab7" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540351392037" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="KaratsubaMultiplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="KaratsubaMultiplication" />
+      <module name="Lab7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="KaratsubaMultiplication" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.KaratsubaMultiplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ad7c6629-c58e-4fe9-8fba-7374efa83586" name="Default Changelist" comment="" />
+      <created>1540350967138</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1540350967138</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Lab7 files">
+      <created>1540351409016</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1540351409016</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Image Layers" />
+      <window_info id="Designer" />
+      <window_info id="UI Designer" />
+      <window_info id="Capture Tool" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24939272" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" weight="0.3291815" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3291815" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3985765" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Maven Projects" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Lab7 files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab7 files" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/KaratsubaMultiplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="38" column="20" lean-forward="true" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Lab7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

@@ -167,7 +167,11 @@ public class Board{
 	}
 	
 	public void printSolution(){
-		System.out.println("Solution Found: ");
+		if(solved)
+			System.out.println("Solution Found: ");
+		else
+			System.out.println("No solution found: ");
+	
 		for (int i = 0; i < size; i++){
 			for (int j = 0; j < size; j++)
 				System.out.print(solution[i][j] + "\t");

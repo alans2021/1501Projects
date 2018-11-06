@@ -125,6 +125,20 @@ public class BoyerMoore
 			else
 				System.out.println("Pattern '" + p[i] + "' found in text '" + t[i] + "' at location " + index);
 			System.out.println("++++++++++++++++++++++++++++++++++++++++++++");
+			System.out.println();
+		}
+		
+		int[] starts = {0, 2, 3, 98, 1, 1};
+		int[] ends = {30, 9, 15, 0, 6, 10};
+		for(int i = 0; i < p.length; i++){
+			int index = find(t[i], p[i], starts[i], ends[i]);
+			System.out.println();
+			if(index == -1)
+				System.out.println("Pattern '" + p[i] + "' not found in text '" + t[i] + "' from index " + starts[i] + " to " + ends[i]);
+			else
+				System.out.println("Pattern '" + p[i] + "' found in text '" + t[i] + "' from index " + starts[i] + " to " + ends[i] + " at location " + index);
+			System.out.println("++++++++++++++++++++++++++++++++++++++++++++");
+			System.out.println();
 		}
 	}
 }

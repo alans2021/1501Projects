@@ -11,6 +11,7 @@
  ******************************************************************************/
 
 import java.io.BufferedInputStream;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.NoSuchElementException;
 
@@ -45,12 +46,19 @@ public final class BinaryStdIn {
     private BinaryStdIn() { }
 
     // fill buffer
-    private static void initialize() {
-        in = new BufferedInputStream(System.in);
-        buffer = 0;
-        n = 0;
-        fillBuffer();
-        isInitialized = true;
+    private static void initialize(){
+        try{
+//            FileInputStream stream = new FileInputStream("TestFiles/test.txt");
+//            in = new BufferedInputStream(stream);
+            in = new BufferedInputStream(System.in);
+            buffer = 0;
+            n = 0;
+            fillBuffer();
+            isInitialized = true;
+        }
+        catch(Exception e){
+            System.out.println("Error");
+        }
     }
 
     private static void fillBuffer() {

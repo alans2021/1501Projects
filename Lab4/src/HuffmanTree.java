@@ -14,6 +14,7 @@ public class HuffmanTree<E>
 		this.encoding = new Hashtable<>();
 		this.developTree();
 		this.developEncoding(this.root,"",0);
+		System.out.println();
 	}
 	
 	//Encode several items at once
@@ -28,7 +29,7 @@ public class HuffmanTree<E>
 	//Encode a single item only
 	public Integer getEncoding(final E item)
 	{
-		return Integer.parseInt(this.encoding.get(item));
+		return Integer.parseInt(this.encoding.get(item), 2);
 	}
 
 	//Decode several items
@@ -82,8 +83,6 @@ public class HuffmanTree<E>
 		
 		root = nodes.poll();
 		checkTree(this.root);
-		System.out.println("Test");
-		System.out.println();
 	}
 
 	//helper method to ensure your tree is valid
@@ -108,6 +107,12 @@ public class HuffmanTree<E>
 	//develops the encoding map based on the Huffman Tree
 	private final void developEncoding(final HuffmanNode<? extends E> node, final String prefix, final int level)
 	{
-
+		if(node.getChild(true) == null){ //If no child, save encoding to hashtable
+			encoding.put(node.item, prefix);
+			return;
+		}
+		developEncoding(node.getChild(true), "0" + prefix, level + 1); //Left child means encode 0
+		developEncoding(node.getChild(false), "1" + prefix, level + 1); //Right child means encode 1
+		
 	}
 }
