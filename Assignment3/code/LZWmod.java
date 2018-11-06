@@ -20,19 +20,27 @@ public class LZWmod {
         char byteinput = BinaryStdIn.readChar(8);
         while(true) {
             try{
+//                System.out.println(code + " ");
+//                if(code == 3040)
+//                    System.out.println("Testing");
                 prefix.append(byteinput);
                 int search = dict.searchPrefix(prefix);
                 while(search == 2) {
                     prefix.append(BinaryStdIn.readChar(8));
                     search = dict.searchPrefix(prefix);
                 }
-                BinaryStdOut.write(dict.get(prefix), W);
+
                 if(search == 1){
+                    BinaryStdOut.write(dict.get(prefix), W);
                     byteinput = BinaryStdIn.readChar();
                     prefix.append(byteinput);
                 }
-                else
+                else{
                     byteinput = prefix.charAt(prefix.length() - 1);
+                    prefix.deleteCharAt(prefix.length() - 1);
+                    BinaryStdOut.write(dict.get(prefix), W);
+                    prefix.append(byteinput);
+                }
 
                 if(code < L) {
                     dict.add(prefix, code);

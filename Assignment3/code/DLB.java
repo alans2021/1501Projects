@@ -14,14 +14,18 @@ public class DLB<Value>{
     // DictInterface to make searches a bit faster.
     public boolean add(StringBuilder s, Value v)
     {
+        if(s.equals("ess "))
+            System.out.println("Testing");
         Node<Value> curr = first;
         for (int i = 0; i < s.length(); i++){
             char letter = s.charAt(i);
             Node<Value> temp = curr;
             for (int j = 0; j < curr.children.size(); j++){
                 Node<Value> node = curr.children.get(j);
-                if(node.data == letter) //See if node contains that letter
-                    curr = node;		//Have curr reference one node down
+                if(node.data == letter) { //See if node contains that letter
+                    curr = node;        //Have curr reference one node down
+                    break;
+                }
             }
             if(curr == temp){			//Means letter not found
                 Node<Value> node = new Node<Value>(letter);
@@ -60,8 +64,10 @@ public class DLB<Value>{
         for(int i = 0; i < s.length(); i++){
             char letter = s.charAt(i);
             for(int j = 0; j < curr.children.size(); j++){
-                if(curr.children.get(j).data == letter)
+                if(curr.children.get(j).data == letter) {
                     curr = curr.children.get(j);
+                    break;
+                }
             }
         }
         if(curr.value == null)
