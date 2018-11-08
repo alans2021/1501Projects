@@ -5,8 +5,12 @@ public class LZWmod {
     private static final int R = 256;        // number of input chars
     private static final int L = 65536;      // number of codewords = 2^16, max size
     private static int W = 9;         // codeword width, 9 at first
-
+    private static boolean reset = false;
     public static void compress() {
+        if(reset)
+            BinaryStdOut.write(true);
+        else
+            BinaryStdOut.write(false);
         DLB<Integer> dict = new DLB<Integer>();
         for (int i = 0; i < R; i++) {
             char ascii = (char) i;
@@ -45,6 +49,17 @@ public class LZWmod {
                     if( (Math.pow(2, W)) - code < .5)
                         W++;
                 }
+                else if(reset){
+                    W = 9; //Codeword size back to 9
+                    dict = new DLB<Integer>(); //new Dictionary
+                    for (int i = 0; i < R; i++) { //mappings for single character done
+                        char ascii = (char) i;
+                        StringBuilder s = new StringBuilder();
+                        s.append(ascii);
+                        dict.add(s, i);
+                    }
+                    code = R+1;  // R is codeword for EOF
+                }
                 prefix.delete(0, prefix.length());
             }
 
@@ -67,6 +82,9 @@ public class LZWmod {
             st[i] = "" + (char) i;
         st[i++] = "";                        // (unused) lookahead for EOF
 
+        if(BinaryStdIn.readBoolean())
+            reset = true;
+
         int codeword = BinaryStdIn.readInt(W);
         String val = st[codeword];
 
@@ -80,6 +98,13 @@ public class LZWmod {
                 s = val + val.charAt(0);   // special case hack
             if (i < L)
                 st[i++] = val + s.charAt(0);
+
+            else if(reset) { //If user does want to reset
+                for (i = 0; i < R; i++)
+                    st[i] = "" + (char) i; //Set single character mappings
+                st[i++] = "";
+                W = 9; //Codeword size back to 9
+            }
             val = s;
             if (Math.pow(2, W) - (i + 1) < 0.1)
                 W++;
@@ -91,7 +116,15 @@ public class LZWmod {
 
 
     public static void main(String[] args) {
-        if (args[0].equals("-")) compress();
+        if (args[0].equals("-")) {
+            try { //See if "r" specified or not
+                if (args[1].equals("r"))
+                    reset = true;
+            }
+            catch(ArrayIndexOutOfBoundsException e){
+            }
+            compress();
+        }
         else if (args[0].equals("+")) expand();
         else throw new RuntimeException("Illegal command line argument");
 

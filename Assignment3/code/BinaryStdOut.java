@@ -11,6 +11,7 @@
  *
  ******************************************************************************/
 import java.io.BufferedOutputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 
 /**
@@ -40,10 +41,16 @@ public final class BinaryStdOut {
 
     // initialize BinaryStdOut
     private static void initialize() {
-        out = new BufferedOutputStream(System.out);
-        buffer = 0;
-        n = 0;
-        isInitialized = true;
+        try {
+            out = new BufferedOutputStream(System.out);
+            buffer = 0;
+            n = 0;
+            isInitialized = true;
+        }
+        catch(Exception e){
+            System.out.println("Error");
+        }
+
     }
 
    /**

@@ -48,8 +48,6 @@ public final class BinaryStdIn {
     // fill buffer
     private static void initialize(){
         try{
-//            FileInputStream stream = new FileInputStream("TestFiles/test.txt");
-//            in = new BufferedInputStream(stream);
             in = new BufferedInputStream(System.in);
             buffer = 0;
             n = 0;
