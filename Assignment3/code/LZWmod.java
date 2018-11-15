@@ -6,6 +6,7 @@ public class LZWmod {
     private static final int L = 65536;      // number of codewords = 2^16, max size
     private static int W = 9;         // codeword width, 9 at first
     private static boolean reset = false;
+
     public static void compress() {
         if(reset)
             BinaryStdOut.write(true);
