@@ -64,7 +64,7 @@ public class SecureChatServer {
 	 *     it to encode the message, and send the result.
 	 * @param msg the message to be sent
 	 */
-	public synchronized void SendMsg(String msg)                        
+	public synchronized void SendMsg(String msg)
 	{
 		for (int i = 0; i < numUsers; i++)
 		{
@@ -123,11 +123,9 @@ public class SecureChatServer {
 						// within 20 seconds.  This keeps
 						// server from getting hung up by an unresponsive client
 						// during the handshaking phase
-						ObjectOutputStream tempWriter =
-								new ObjectOutputStream(newSocket.getOutputStream());
+						ObjectOutputStream tempWriter = new ObjectOutputStream(newSocket.getOutputStream());
 						tempWriter.flush();
-						ObjectInputStream tempReader =
-								new ObjectInputStream(newSocket.getInputStream());
+						ObjectInputStream tempReader = new ObjectInputStream(newSocket.getInputStream());
 
 						System.out.println("Sending E");
 						tempWriter.writeObject(E); tempWriter.flush();
@@ -137,8 +135,8 @@ public class SecureChatServer {
 						String encType = null;
 						// Randomly determine which cipher will be used and send the
 						// appropriate string to the client.
-						if (test > 0.5)
-							encType = new String("Sub");	
+						if (test > 0.001)
+							encType = new String("Sub");
 						else
 							encType = new String("Add");
 						tempWriter.writeObject(encType);
@@ -233,7 +231,7 @@ public class SecureChatServer {
 		{
 			System.out.println("Something went wrong " + e);
 		}
-		finally 
+		finally
 		{
 			System.out.println("Server shutting down");
 
@@ -255,8 +253,8 @@ public class SecureChatServer {
 		private String myName;
 
 		private UserThread(Socket newSocket, int id, String newName,
-				ObjectInputStream newReader,
-				ObjectOutputStream newWriter, SymCipher c) throws IOException
+						   ObjectInputStream newReader,
+						   ObjectOutputStream newWriter, SymCipher c) throws IOException
 		{
 			mySocket = newSocket;
 			myId = id;
@@ -299,7 +297,7 @@ public class SecureChatServer {
 				String newMsg = null;
 				byte[] newBytes = null;
 				try {
-					newBytes = (byte []) myReader.readObject(); 
+					newBytes = (byte []) myReader.readObject();
 					newMsg = myCipher.decode(newBytes);
 					if (newBytes == null || newMsg.equals("CLIENT CLOSING"))
 						ok = false;
